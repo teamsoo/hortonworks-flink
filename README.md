@@ -12,6 +12,7 @@ The Ambari service lets you easily install/compile Flink on HDP 2.4
 Limitations:
   - This is not an officially supported service and *is not meant to be deployed in production systems*. It is only meant for testing demo/purposes
   - It does not support Ambari/HDP upgrade process and will cause upgrade problems if not removed prior to upgrade
+  - System-wide JAVA_HOME is needed in the target node
 
 Author: [Ali Bajwa](https://github.com/abajwa-hw)
 - Thanks to [Davide Vergari](https://github.com/dvergari) for enhancing to run in clustered env
