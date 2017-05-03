@@ -6,7 +6,7 @@ More details on Flink and how it is being used in the industry today available h
 
 The Ambari service lets you easily install/compile Flink on HDP 2.4
 - Features:
-  - By default, downloads prebuilt package of Flink 1.0, but also gives option to build the latest Flink from source instead
+  - By default, downloads prebuilt package of Flink 1.2.1, but also gives option to build the latest Flink from source instead
   - Exposes flink-conf.yaml in Ambari UI
 
 Limitations:
@@ -35,7 +35,7 @@ ssh root@sandbox.hortonworks.com
 - To download the Flink service folder, run below
 ```
 VERSION=`hdp-select status hadoop-client | sed 's/hadoop-client - \([0-9]\.[0-9]\).*/\1/'`
-sudo git clone https://github.com/hananiel/hortonworks-flink.git   /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/FLINK   
+sudo git clone https://github.com/teamsoo/hortonworks-flink.git   /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/FLINK   
 ```
 
 - Restart Ambari
